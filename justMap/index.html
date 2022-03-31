@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>Google Maps | eSource</h1>
+
+    <div id="map" style="width:100%;height:400px;"></div>
+
+    <script>
+        function initMap() {
+            var props = {
+                center: new google.maps.LatLng(51.508742, -0.120850),
+                zoom: 5,
+            };
+            var map = new google.maps.Map(document.getElementById("map"), props);
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5O1-Vh1u9XjNOhCeXZ0XKx3hbcG0pBFg&callback=initMap"></script>
+
+</body>
+
+</html>
